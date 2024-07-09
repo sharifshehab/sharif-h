@@ -223,6 +223,7 @@ h3 {
     padding: 15px 40px;
     border: 1px solid rgb(13, 19, 33);
     display: inline-block;
+    text-transform: capitalize;
 }
 
 /*==================================================
@@ -232,8 +233,8 @@ h3 {
 /*==================================================
                inspiration section start
 ==================================================*/
-.inspiration-wrap{
-padding: 80px 0;
+.inspiration-wrap {
+    padding: 80px 0;
 }
 
 .inspiration-video {
@@ -244,12 +245,142 @@ padding: 80px 0;
     padding: 32px;
     margin-top: 25px;
 }
+
 .inspiration-video iframe {
     width: 100%;
     height: 733px;
     border-radius: 16px;
-   
+
 }
+
 /*==================================================
                inspiration section end
+==================================================*/
+
+/*==================================================
+               current target section start
+==================================================*/
+.targets {
+    display: flex;
+    gap: 1.5em;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 25px;
+}
+
+.single-targets {
+    padding: 40px;
+    border-radius: 16px;
+
+}
+
+.bg-orange {
+    background: rgba(255, 76, 30, 0.05);
+}
+
+.bg-blue {
+    background: rgba(0, 76, 232, 0.05);
+}
+
+.bg-yellow {
+    background: rgba(255, 223, 0, 0.05);
+}
+
+.single-targets h4 {
+    text-transform: uppercase;
+    margin: 15px 0;
+}
+
+.single-targets p {
+    margin: 15px 0;
+}
+
+.single-targets a {
+    text-decoration: underline;
+    font-weight: 700;
+    line-height: 19px;
+}
+
+/*==================================================
+               current target section end
+==================================================*/
+
+/*==================================================
+                  form section start
+==================================================*/
+.form-wrap {
+    height: 418px;
+    border-radius: 16px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2),
+            rgba(0, 0, 0, 0.2)), url(img/handshake.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 80px;
+    margin-bottom: 60px;
+}
+
+.form-wrap .sec-title,
+.form-wrap .sec-title h2.color-white {
+    color: #ffffff;
+}
+
+.form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5em;
+    padding: 0px 170px;
+}
+
+.form input {
+    border: 1px solid rgba(13, 19, 33, 0.15);
+    border-radius: 8px;
+    background: rgb(255, 255, 255);
+    padding: 19px 20px;
+    flex: 1;
+}
+
+.form button {
+    border: 1px solid rgba(13, 19, 33, 0.15);
+    border-radius: 8px;
+    background: rgb(255, 255, 255);
+    padding: 16px 20px;
+    flex-basis: 20%;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 23px;
+    color: rgb(13, 19, 33);
+}
+
+/*==================================================
+                  form section end
+==================================================*/
+
+/*==================================================
+                  footer section start
+==================================================*/
+footer{
+    padding: 32px 0;
+        background: rgba(13, 19, 33, 0.03);
+}
+.copyright-text p {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 23px;
+    color: rgb(13, 19, 33);
+}
+
+.social-icons ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 1.5em;
+}
+
+/*==================================================
+                  footer section end
 ==================================================*/
