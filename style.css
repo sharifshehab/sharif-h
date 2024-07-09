@@ -88,6 +88,13 @@ h3 {
     justify-content: center;
 }
 
+.flexbetween {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
 /* .flexitem {
     display: flex;
     align-items: center;
@@ -104,8 +111,6 @@ h3 {
 ==================================================*/
 /* wrapper */
 .header-wrap {
-    justify-content: space-between;
-    align-items: center;
     padding: 45px 0;
 }
 
@@ -141,16 +146,19 @@ h3 {
     background-size: contain;
     padding: 25px 0 40px;
 }
+
 /* hero image */
 .hero-image {
-   margin-bottom: 40px;
+    margin-bottom: 40px;
 }
+
 /* hero content */
 .hero-content p {
     margin: 0 auto;
     padding: 25px 0;
     width: 1136px;
 }
+
 /* hero button */
 .hero-button a {
     margin-top: 10px;
@@ -163,6 +171,51 @@ h3 {
     padding: 20px 35px;
     display: inline-block;
 }
+
 /*==================================================
                 hero section end
+==================================================*/
+
+/*==================================================
+               web development section start
+==================================================*/
+/* wrapper */
+.webdev-wrap {
+    margin-top: 75px;
+    border-radius: 16px;
+    background: rgba(13, 19, 33, 0.02);
+    padding: 80px 97px 80px 97px;
+}
+
+.single-feature {
+    padding: 48px;
+    border-radius: 16px;
+    margin: 10px 0 30px;
+}
+
+.gradient-ltr {
+    background: linear-gradient(90.00deg, rgb(255, 255, 255), rgba(255, 255, 255, 0) 100%);
+}
+.gradient-rtl {
+        background: linear-gradient(270.00deg, rgb(255, 255, 255), rgba(255, 255, 255, 0) 100%);
+}
+
+.feature-content {
+    flex-basis: 635px;
+}
+
+.feature-content p {
+    margin:25px 0;
+}
+
+.feature-content a {
+    padding: 15px 40px;
+    border: 1px solid rgb(13, 19, 33);
+    display: inline-block;
+}
+
+
+
+/*==================================================
+               web development section end
 ==================================================*/
