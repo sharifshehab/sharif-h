@@ -54,7 +54,7 @@ h4 {
 
 h1 {
     font-size: 48px;
-    line-height: 1;
+    line-height: 1.6em;
 }
 
 h2 {
@@ -73,7 +73,7 @@ h3 {
 
 
 .container {
-    max-width: 1140px;
+    max-width: 1520px;
     margin: 0 auto;
 }
 
@@ -119,6 +119,7 @@ h3 {
     font-size: 20px;
     font-weight: 600;
     line-height: 23px;
+    text-transform: capitalize;
     padding: 17px 24px;
     border: 1px solid rgb(13, 19, 33);
     border-radius: 8px;
@@ -127,4 +128,41 @@ h3 {
 
 /*==================================================
                 header end
+==================================================*/
+
+/*==================================================
+                hero section start
+==================================================*/
+/* wrapper */
+.hero-wrap {
+    text-align: center;
+    background-image: url(img/Hero-bg.png);
+    background-position: center center;
+    background-size: contain;
+    padding: 25px 0 40px;
+}
+/* hero image */
+.hero-image {
+   margin-bottom: 40px;
+}
+/* hero content */
+.hero-content p {
+    margin: 0 auto;
+    padding: 25px 0;
+    width: 1136px;
+}
+/* hero button */
+.hero-button a {
+    margin-top: 10px;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 23px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(13, 19, 33);
+    border-radius: 8px;
+    padding: 20px 35px;
+    display: inline-block;
+}
+/*==================================================
+                hero section end
 ==================================================*/
