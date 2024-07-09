@@ -1,0 +1,130 @@
+/* calling google font */
+@import url('https://fonts.googleapis.com/css2?family=Azeret+Mono:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Azeret Mono", monospace;
+    font-optical-sizing: auto;
+    font-size: 16px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 1.4;
+    color: #0D1321;
+    background: none repeat scroll 0 0;
+    background-color: #ffffff;
+    margin: 0 auto;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+}
+
+
+input {
+    outline: none;
+}
+
+input::placeholder {
+    font: inherit;
+}
+
+h1,
+h2,
+h4 {
+    font-weight: 800;
+    color: #0D1321;
+}
+
+h1 {
+    font-size: 48px;
+    line-height: 1;
+}
+
+h2 {
+    font-size: 32px;
+}
+
+h3,
+h4 {
+    font-size: 24px;
+}
+
+h3 {
+    font-weight: 700;
+    color: #0D1321B3;
+}
+
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.flexwrap {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.flexcenter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* .flexitem {
+    display: flex;
+    align-items: center;
+}
+
+.flexcol {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+} */
+
+/*==================================================
+                header start
+==================================================*/
+/* wrapper */
+.header-wrap {
+    justify-content: space-between;
+    align-items: center;
+    padding: 45px 0;
+}
+
+/*----------------- logo -----------------*/
+.logo h4 {
+    font-size: 28px;
+}
+
+/*----------------- resume -----------------*/
+.resume a {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 23px;
+    padding: 17px 24px;
+    border: 1px solid rgb(13, 19, 33);
+    border-radius: 8px;
+    opacity: 0.8;
+}
+
+/*==================================================
+                header end
+==================================================*/
