@@ -8,6 +8,9 @@
     box-sizing: border-box;
 }
 
+/*-------------------- 
+  preset properties 
+--------------------*/
 body {
     font-family: "Azeret Mono", monospace;
     font-optical-sizing: auto;
@@ -25,6 +28,11 @@ html {
     scroll-behavior: smooth;
 }
 
+p {
+    color: #585d6a;
+    line-height: 1.8;
+}
+
 a {
     text-decoration: none;
     color: inherit;
@@ -35,7 +43,6 @@ img {
     height: auto;
     vertical-align: middle;
 }
-
 
 input {
     outline: none;
@@ -71,21 +78,12 @@ h3 {
     color: #0D1321B3;
 }
 
-
+/*-----------------------   
+  * REUSABLE SELECTION *
+------------------------*/
 .container {
     max-width: 1520px;
     margin: 0 auto;
-}
-
-.flexwrap {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.flexcenter {
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
 .flexbetween {
@@ -93,18 +91,25 @@ h3 {
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
+    gap: 3em;
 }
-
-/* .flexitem {
-    display: flex;
-    align-items: center;
+/* section side padding */
+.header-container,
+.webdev-container,
+.inspiration-container,
+.current-target-container,
+.form-container,
+.footer-container {
+    padding: 0 32px;
 }
-
-.flexcol {
-    display: flex;
-    flex-direction: column;
-    gap: 1em;
-} */
+/* section gap */
+.section-gap {
+    margin: 95px 0 125px;
+}
+/* section bottom gap */
+.section-bottom-gap {
+    margin-bottom: 125px;
+}
 
 /*==================================================
                 header start
@@ -156,7 +161,7 @@ h3 {
 .hero-content p {
     margin: 0 auto;
     padding: 25px 0;
-    width: 1136px;
+    width: 80%;
 }
 
 /* hero button */
@@ -181,22 +186,23 @@ h3 {
 ==================================================*/
 /* wrapper */
 .webdev-wrap {
-    margin-top: 75px;
     border-radius: 16px;
     background: rgba(13, 19, 33, 0.02);
-    padding: 80px 97px 80px 97px;
+    padding: 6%;
 }
 
+/* title section */
 .sec-title {
     text-align: center;
 }
 
 .sec-title p {
-    width: 1135px;
+    width: 80%;
     padding: 30px;
     margin: 0 auto;
 }
 
+/* features */
 .single-feature {
     padding: 48px;
     border-radius: 16px;
@@ -211,6 +217,7 @@ h3 {
     background: linear-gradient(270.00deg, rgb(255, 255, 255), rgba(255, 255, 255, 0) 100%);
 }
 
+/* single feature content */
 .feature-content {
     flex-basis: 635px;
 }
@@ -219,6 +226,7 @@ h3 {
     margin: 25px 0;
 }
 
+/* single feature button */
 .feature-content a {
     padding: 15px 40px;
     border: 1px solid rgb(13, 19, 33);
@@ -233,9 +241,6 @@ h3 {
 /*==================================================
                inspiration section start
 ==================================================*/
-.inspiration-wrap {
-    padding: 80px 0;
-}
 
 .inspiration-video {
     width: 100%;
@@ -260,18 +265,27 @@ h3 {
 /*==================================================
                current target section start
 ==================================================*/
-.targets {
-    display: flex;
-    gap: 1.5em;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 25px;
+/* wrapper */
+.current-target-wrap {
+    margin-bottom: 80px;
 }
 
+/* targets */
+.targets {
+    margin-top: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5em;
+}
+
+.targets>* {
+    flex: 1;
+}
+
+/* single target */
 .single-targets {
     padding: 40px;
     border-radius: 16px;
-
 }
 
 .bg-orange {
@@ -285,20 +299,21 @@ h3 {
 .bg-yellow {
     background: rgba(255, 223, 0, 0.05);
 }
-
+/* single target title */
 .single-targets h4 {
     text-transform: uppercase;
     margin: 15px 0;
 }
-
+/* single target text */
 .single-targets p {
     margin: 15px 0;
 }
-
+/* single target link */
 .single-targets a {
     text-decoration: underline;
     font-weight: 700;
     line-height: 19px;
+    text-transform: capitalize;
 }
 
 /*==================================================
@@ -308,6 +323,7 @@ h3 {
 /*==================================================
                   form section start
 ==================================================*/
+/* wrapper */
 .form-wrap {
     height: 418px;
     border-radius: 16px;
@@ -319,21 +335,20 @@ h3 {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-top: 80px;
-    margin-bottom: 60px;
+    padding: 32px;
 }
 
-.form-wrap .sec-title,
-.form-wrap .sec-title h2.color-white {
+/* form heading */
+.form-wrap .sec-title p,
+.form-wrap .sec-title h2 {
     color: #ffffff;
 }
-
+/* form wrap */
 .form {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 1.5em;
-    padding: 0px 170px;
+    gap: 1.4em;
 }
 
 .form input {
@@ -341,7 +356,7 @@ h3 {
     border-radius: 8px;
     background: rgb(255, 255, 255);
     padding: 19px 20px;
-    flex: 1;
+    flex-basis: 70%;
 }
 
 .form button {
@@ -349,7 +364,7 @@ h3 {
     border-radius: 8px;
     background: rgb(255, 255, 255);
     padding: 16px 20px;
-    flex-basis: 20%;
+    flex-basis: 15%;
     font-size: 20px;
     font-weight: 600;
     line-height: 23px;
@@ -363,17 +378,19 @@ h3 {
 /*==================================================
                   footer section start
 ==================================================*/
-footer{
+/* wrapper */
+footer {
     padding: 32px 0;
-        background: rgba(13, 19, 33, 0.03);
+    background: rgba(13, 19, 33, 0.03);
 }
+/* footer text */
 .copyright-text p {
     font-size: 20px;
     font-weight: 600;
     line-height: 23px;
     color: rgb(13, 19, 33);
 }
-
+/* footer icons */
 .social-icons ul {
     list-style: none;
     display: flex;
